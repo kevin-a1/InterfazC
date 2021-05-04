@@ -1,0 +1,25 @@
+<div class="container">
+  <div>
+    <div class="container">
+      <h3>Usuarios Registrados</h3>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Usuario</th>
+          <th>Nombre Completo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of usuarios">
+          <td>{{ data.id }}</td>
+          <td>{{ data.username }}</td>
+          <td>{{ data.nombreCompleto }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" (click)="deleteToken()">Salir</button>&nbsp;
+    <button type="button" class="btn btn-primary" (click)="nuevo()">Nuevo Usuario</button>
+  </div>
+</div>

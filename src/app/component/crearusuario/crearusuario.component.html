@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="container text-align center">
+    <h3>Nuevo Usuario</h3>
+  </div>
+  <div class="ui-float-label">
+    <label>Usuario</label><br />
+    <input [(ngModel)]="username" type="text" size="50" />
+  </div>
+  <div class="ui-float-label">
+    <label>Contraseña</label><br />
+    <input [(ngModel)]="contrasena" type="password" size="50" />
+  </div>
+  <div class="ui-float-label">
+    <label>Nombre Completo</label><br />
+    <input [(ngModel)]="nombreCompleto" type="text" size="50" />
+  </div>
+  <br>
+  <button type="button" class="btn btn-primary" (click)=nuevo()>Guardar</button>&nbsp;
+  <button type="button" class="btn btn-primary">Regresar</button>
+</div>
